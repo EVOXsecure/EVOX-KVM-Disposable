@@ -8,11 +8,15 @@ Repository: https://github.com/EVOXsecure/EVOX-KVM-Disposable (owner: EVOXsecure
 
 Version: 1.0.1 · License: GPL-3.0-or-later · Tested on **Linux Mint 22 / Ubuntu 24.04** (X11).
 
-## Install
+## Install EVOX KVM DISPOSABLE with Terminal
 
 **English:** For Linux Mint 22 / Ubuntu 24.04. The download is on the [Releases page](https://github.com/EVOXsecure/EVOX-KVM-Disposable/releases/latest).
+Open a terminal and run this terminal command. It downloads the package, checks its checksum and installs it. You only have to enter your password.
 
 **Deutsch:** Für Linux Mint 22 / Ubuntu 24.04. Der Download liegt unter [Releases](https://github.com/EVOXsecure/EVOX-KVM-Disposable/releases/latest).
+Öffne ein Terminal und führe diesen Terminal Befehl aus. Er lädt das Paket, prüft die Prüfsumme und installiert es. Du musst nur dein Passwort eingeben.
+
+Terminal Command / Terminal Befehl:
 
 ```
 B=https://github.com/EVOXsecure/EVOX-KVM-Disposable/releases/latest/download; cd ~ && wget -q $B/evoxd_1.0.1_all.deb $B/SHA256SUMS && sha256sum -c SHA256SUMS && sudo apt install ./evoxd_1.0.1_all.deb
