@@ -8,17 +8,23 @@ Repository: https://github.com/EVOXsecure/EVOX-KVM-Disposable (owner: EVOXsecure
 
 Version: 1.0.1 · License: GPL-3.0-or-later · Tested on **Linux Mint 22 / Ubuntu 24.04** (X11).
 
-## Install (.deb from a release)
+## Install
 
-Download `evoxd_<version>_all.deb` and `SHA256SUMS` from the release page, then:
+**English:** For Linux Mint 22 / Ubuntu 24.04. The download is on the [Releases page](https://github.com/EVOXsecure/EVOX-KVM-Disposable/releases/latest).
+
+**Deutsch:** Für Linux Mint 22 / Ubuntu 24.04. Der Download liegt unter [Releases](https://github.com/EVOXsecure/EVOX-KVM-Disposable/releases/latest).
 
 ```
-sha256sum -c SHA256SUMS --ignore-missing
-sudo apt install ./evoxd_<version>_all.deb
+B=https://github.com/EVOXsecure/EVOX-KVM-Disposable/releases/latest/download; cd ~ && wget -q $B/evoxd_1.0.1_all.deb $B/SHA256SUMS && sha256sum -c SHA256SUMS && sudo apt install ./evoxd_1.0.1_all.deb
 ```
 
-Do not install if the check does not print `OK`.
-Then start **EVOX** from the menu, open **Setup check** and fix everything marked ✗ (it tells you what the computer still needs).
+- EN: Aborts if the checksum does not match. The checksum protects against corrupted downloads, not against a compromised account.
+- DE: Bricht ab, wenn die Prüfsumme nicht stimmt. Die Prüfsumme schützt vor beschädigten Downloads, nicht vor einem kompromittierten Konto.
+- EN: After installing: start EVOX → Setup check → click "Fix it" on the EVOX items → log out and in once → "Check again".
+- DE: Nach der Installation: EVOX starten → Setup check → bei den EVOX-Punkten "Fix it" → einmal aus- und einloggen → "Check again".
+- EN: `/dev/kvm` must be available (inside a VM: nested virtualization).
+- DE: `/dev/kvm` muss verfügbar sein (in einer VM Nested Virtualization).
+
 On the command line: `evoxd setup` (once), `evoxd netcheck`, `evoxd list`.
 
 ## Known limits (short)
