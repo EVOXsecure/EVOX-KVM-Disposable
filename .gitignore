@@ -1,0 +1,29 @@
+# Images
+*.qcow2
+*.iso
+*.img
+*.raw
+*.vmdk
+# Schlüssel und Passwörter
+*.key
+*.pem
+*.gpg
+*.asc
+*.p12
+id_*
+*passw*
+*secret*
+.env
+__pycache__/
+*.pyc
+/build/
+# Lokale Claude-Code-Rechte (nicht einchecken)
+.claude/settings.local.json
+# Veröffentlichung
+settings.local.json
+*.tar.gz
+*.sqlite3
+ALTBESTAND*
+*backup*
+*.bak
+/dist/

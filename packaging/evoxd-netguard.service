@@ -1,0 +1,33 @@
+[Unit]
+Description=EVOX Netzsperre (nft-Tabelle, Routing-Sperre, Wächter)
+Documentation=file:/usr/share/doc/evoxd/ARCHITEKTUR-V1.md
+After=nftables.service
+Before=libvirtd.service virtnetworkd.service virtqemud.service
+Wants=network-pre.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -I -m evoxd.guard
+# fail-closed: endet der Wächter (Absturz, Stopp), wird die Gast-Bridge getrennt
+ExecStopPost=-/usr/sbin/ip link set dev evoxd0 down
+Restart=always
+RestartSec=1
+RuntimeDirectory=evoxd
+RuntimeDirectoryMode=0755
+RuntimeDirectoryPreserve=yes
+CapabilityBoundingSet=CAP_NET_ADMIN
+AmbientCapabilities=
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/proc/sys/net/ipv6/conf
+ProtectHome=yes
+PrivateTmp=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_NETLINK AF_UNIX
+LimitCORE=0
+MemoryDenyWriteExecute=yes
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

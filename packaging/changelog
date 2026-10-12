@@ -1,0 +1,634 @@
+evoxd (1.0.1) unstable; urgency=medium
+
+  * Release 1.0.1. Maintainer data changed for publication.
+    No functional change compared with 1.0.0.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 26 Oct 2026 13:00:00 +0100
+
+evoxd (1.0.0) unstable; urgency=medium
+
+  * Release 1.0.0. Documentation review, new chapter "Known limits" (EN, DE),
+    roadmap for 2.0. No functional change compared with 0.10.4.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 26 Oct 2026 12:00:00 +0100
+
+evoxd (0.10.4) unstable; urgency=medium
+
+  * Manual print layout: A4 with margins, page break before chapters, no
+    clipped content. Hints when "evoxd reconcile" and "evoxd netcheck" are
+    needed (rarely; the GUI does it for you). New one-page Easy Guide (EN, DE)
+    with pictures, opened from the Documentation dialog.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 26 Oct 2026 11:00:00 +0100
+
+evoxd (0.10.3) unstable; urgency=medium
+
+  * Full Manual (English and German) and Developer Doc (English): threat
+    model, comparison, setup, every tab, risks, checklists, privacy,
+    troubleshooting, command line reference. The "?" buttons in Setup check
+    and Color settings now open the matching chapter. Local files only.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 26 Oct 2026 10:00:00 +0100
+
+evoxd (0.10.2) unstable; urgency=medium
+
+  * "Help" is now "Documentation": a dialog to choose language and document
+    (Quick Guide; Full Manual and Developer Doc are coming). New dark style
+    with language switch, search and light/dark switch; "?" buttons in
+    Setup check and Color settings. Local files only.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 23 Oct 2026 10:00:00 +0200
+
+evoxd (0.10.1) unstable; urgency=medium
+
+  * New "Help" button: opens the one-page Quick Guide (English, German if
+    the locale is German) in the browser. Local file only.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Thu, 22 Oct 2026 10:00:00 +0200
+
+evoxd (0.10.0) unstable; urgency=medium
+
+  * New "Setup check": a checklist for packages, hardware, groups, services,
+    the EVOX setup and a template. Fixes run from a fixed command list in a
+    terminal after you confirm; the GUI never gets root.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Wed, 21 Oct 2026 14:00:00 +0200
+
+evoxd (0.9.2) unstable; urgency=medium
+
+  * Seven new color themes: High Contrast, Nord, Solarized Dark, Dracula,
+    Synthwave, Matrix, Amber Terminal. Safety colors stay fixed.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Wed, 21 Oct 2026 13:00:00 +0200
+
+evoxd (0.9.1) unstable; urgency=medium
+
+  * New application icon (cube with lock, cube ring, frame).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Wed, 21 Oct 2026 12:00:00 +0200
+
+evoxd (0.9.0) unstable; urgency=medium
+
+  * Color settings: low contrast only warns (under 3:1 "Use anyway", under
+    2:1 a stronger warning), it never refuses a color. Reset stays visible.
+  * New themes "Tron Legacy" and "Cyberpunk".
+  * Theme export/import as a checked JSON file (plain colors only).
+  * Emergency reset: EVOXD_RESET_COLORS=1 evoxd-gui (config is saved first).
+  * Text size 150 %: main window now fits the work area.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Wed, 21 Oct 2026 10:00:00 +0200
+
+evoxd (0.8.2) unstable; urgency=medium
+
+  * Color settings: the "selected" rows in the preview now show the
+    selection color from the start (VAULT was grey until clicked).
+  * The -BACKUP row (red text) can now be changed: new color
+    "-BACKUP row text".
+  * Text color and background color can be chosen separately for buttons,
+    tabs and selected rows: click an item, then "Text color" or
+    "Background color".
+  * Safety colors (Stop and erase, SHUT DOWN & ERASE, INACTIVE, errors)
+    stay fixed.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Tue, 20 Oct 2026 10:00:00 +0200
+
+evoxd (0.8.1) unstable; urgency=medium
+
+  * Color settings: new preview with one block per area (tab, small list,
+    buttons) built from the real GUI styles. Click an item (or press Enter
+    on it) to open the color picker for exactly that item; the preview
+    updates live and warns about poor contrast right at the item.
+  * New "Compare" button: hold it to see the color before your last change.
+  * Text size is now a slider from 80 % to 150 % in steps of 10 %.
+  * Plain-language names for every color item (tooltips and dialog).
+  * Safety colors (Stop and erase, SHUT DOWN & ERASE, INACTIVE, errors) are
+    shown as fixed red examples and cannot be changed.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 19 Oct 2026 10:00:00 +0200
+
+evoxd (0.8.0) unstable; urgency=medium
+
+  * New "Color settings" window: choose a theme (Dark (default) or Light),
+    change single colors with a colour picker, pick the text size
+    (90/100/120/140 %), live preview, reset and save. Applied without
+    restart.
+  * Contrast check while changing colors: below 3:1 a warning, below 2:1
+    the color is refused. Safety colors (Stop and erase, danger red,
+    network lock INACTIVE, errors, mode bars) are fixed in every theme.
+  * All GUI colors are named roles in one place; the Dark theme looks
+    exactly like 0.7.5.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 18 Oct 2026 10:00:00 +0200
+
+evoxd (0.7.5) unstable; urgency=medium
+
+  * Colour change: neon green (#39D353) replaces purple for everything around
+    DISPOSABLE / INTERNET (tab, HOW TO USE step 4, start buttons, list
+    selection, VM name, purposes list). The title keeps its purple brand
+    colour. Verify is blue-grey.
+  * The title sits one line lower, centred over the tagline and the window.
+  * New EXIT button (top right) with a confirmation: keep running disposable
+    VMs running, shut down and erase them, or go back.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sat, 17 Oct 2026 10:00:00 +0200
+
+evoxd (0.7.4) unstable; urgency=medium
+
+  * Live Monitor is its own window: the OPEN DETAILS button opens a freely
+    resizable window with the RAM, CPU and network/overlay blocks (large
+    numbers, thick bars, content fills the window). CLOSE DETAILS, Esc and
+    the window's X close it. Position, size and an optional "Always on
+    top" switch are remembered. If the VM ends it shows "VM stopped".
+  * The main window shows one summary line (RAM level with symbol and
+    word, CPU, running time) next to the button instead of the details
+    area; the window size never changes because of it.
+  * Capacity and free space are shown with one decimal in GB (6.8 GB); only
+    the RAM field of the start dialog keeps two decimals.
+  * "HOW TO USE" heading is centered.
+  * The 1 s refresh runs only while a VM runs and either the Live Monitor
+    is open or a running VM is marked.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 16 Oct 2026 10:00:00 +0200
+
+evoxd (0.7.3) unstable; urgency=medium
+
+  * Layout: "HOW TO USE" is a heading on its own line above step 1; the
+    steps use the full width.
+  * Details button reads "OPEN DETAILS" / "CLOSE DETAILS". The details
+    area never enlarges the window: it takes space from the list, its
+    height follows its content, and closing it restores the window size
+    (unless the user resized the window meanwhile).
+  * RAM in steps of 0.25 GB (256 MiB) from 1 GB; old remembered values are
+    rounded to the grid. New recommendation: peak + 25 %, rounded up to
+    0.25 GB, at least 1 GB; above 85 % of the assigned RAM the hint asks
+    for more RAM.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Thu, 15 Oct 2026 10:00:00 +0200
+
+evoxd (0.7.2) unstable; urgency=medium
+
+  * Faster live values: while a disposable VM is running, RAM, CPU and
+    network are read every 1 s (memory balloon statistics period 1 s);
+    without a running VM the 5 s cycle stays. Reading happens in a
+    background thread; a delayed reading is skipped, errors never disturb.
+  * Large details area behind a prominent "DETAILS" button directly under
+    the list (about half the window height). Opens automatically when a
+    running VM is selected unless closed explicitly; the choice is
+    remembered. Bigger numbers and thicker bars.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Wed, 14 Oct 2026 11:00:00 +0200
+
+evoxd (0.7.1) unstable; urgency=medium
+
+  * Real RAM use: the virtio memory balloon now reports guest memory
+    statistics every 5 s (read-only from the host via libvirt; no new
+    guest-host channel). Without guest figures "n/a" or an estimate marked
+    "~"; never invented values.
+  * DISPOSABLE list is slimmer: name, state, mode, running time, compact RAM
+    traffic light, CPU percent.
+  * Details area with three blocks: RAM bar with zones (green up to 60 %,
+    yellow up to 85 %, red above) and peak mark with time; CPU bar with a
+    short history; network/overlay with fill level, template, mode, network
+    lock state and start count of the purpose. Folded state is remembered.
+  * Stop and erase shows a one-line RAM hint (information only) with an
+    opt-in "Remember ... for <purpose>" button.
+  * Start dialog shows the highest RAM use of the purpose so far (hint only).
+  * HOW-TO step 4 glow uses the button colour (purple / blue).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Wed, 14 Oct 2026 10:00:00 +0200
+
+evoxd (0.7.0) unstable; urgency=medium
+
+  * Live values per running disposable VM (read-only from libvirt statistics):
+    RAM traffic light with symbol and word (OK / HIGH / FULL / LOW) and peak,
+    CPU percent, running time, network traffic, overlay size. Shown in the
+    details bar and as compact columns in the DISPOSABLE list; "n/a" when a
+    value is not available. Updated only in the existing 5 s cycle and only
+    when the display really changes.
+  * Fix: rare "ValueError: seek of closed file" from the VM window check
+    (the check could run twice; now exactly once, timer removed, file closed
+    when the window closes).
+  * Start dialog: optional "Remember RAM for <purpose>" (off by default),
+    stored in ~/.config/evoxd/config.json; only the RAM size, still limited
+    by free memory. Mode and network lock are never remembered.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Tue, 13 Oct 2026 10:00:00 +0200
+
+evoxd (0.6.21) unstable; urgency=medium
+
+  * Selection colour per tab (appearance only): TEMPLATE list and import
+    dialog turquoise, DISPOSABLE list and purposes list dark purple, VAULT
+    list stays amber. Rows with their own text colour (red) stay readable
+    when selected. No change to functions, locks or key bindings.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 23:00:00 +0200
+
+evoxd (0.6.20) unstable; urgency=medium
+
+  * TEMPLATE tab: the newest template that is not a -BACKUP copy is
+    pre-selected (highlight only). A selection made by the user is kept.
+    The DISPOSABLE tab deliberately has no pre-selection.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 22:00:00 +0200
+
+evoxd (0.6.19) unstable; urgency=medium
+
+  * Keyboard focus in the lists (DISPOSABLE, TEMPLATE, VAULT): one frame
+    around the whole list field instead of one per cell. Selection stays amber.
+  * New tools: backup-projekt.sh (archive to ~/EVOX-Backups) and
+    backup-check.sh (warns about incomplete or unsigned archives).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 21:00:00 +0200
+
+evoxd (0.6.18) unstable; urgency=medium
+
+  * Keyboard focus colour changed from orchid violet to lime (#C6FF00);
+    the dark inner line is now a neutral near-black (#0A0A0F). Same double
+    frame and soft glow.
+  * Environment variable EVOXD_FOCUS_COLOR=#RRGGBB overrides the focus colour
+    at start (for comparing colours); other values are ignored.
+  * Appearance only; functions, locks, keys, status line and confirmation
+    windows unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 20:00:00 +0200
+
+evoxd (0.6.17) unstable; urgency=medium
+
+  * Keyboard focus colour changed from neon mint to orchid violet (#C04BFF);
+    same double frame (dark inner line, outer line) and soft glow.
+  * The small arrow in front of the focused tab / HOW TO button is removed;
+    those labels are exactly as before 0.6.16.
+  * Appearance only; functions, locks, keys, status line and confirmation
+    windows unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 18:00:00 +0200
+
+evoxd (0.6.16) unstable; urgency=medium
+
+  * Keyboard focus much easier to see: double frame (dark inner line, 4 px
+    neon-mint outer line) plus a soft mint glow, on buttons, tabs, chips,
+    HOW TO buttons, list rows and fields. No blinking, no layout jump.
+  * The focused tab and HOW TO button also show a small arrow in front of the
+    label (keyboard focus only).
+  * New status line at the bottom: a short text about the focused element,
+    including the reason when a button is locked. Informational only.
+  * Appearance only; functions, locks, keys and confirmation windows unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 12:00:00 +0200
+
+evoxd (0.6.15) unstable; urgency=medium
+
+  * Keyboard use made visible: the element with the keyboard focus gets a
+    neon-mint frame (buttons, tabs, chips, HOW TO buttons, list rows, fields).
+  * Keys: Tab / Shift+Tab move, Left/Right switch tabs on the tab row,
+    Up/Down move in lists and between the HOW TO rows, Enter presses the
+    focused button, Esc closes a window like BACK. New "Keys" button and F1
+    open a small keyboard help.
+  * Every dialog now starts with the focus on BACK / Cancel, so Enter right
+    after opening never starts, makes, imports or erases anything. Enter in
+    the name field no longer starts a VM.
+  * Appearance and keyboard handling only; functions, locks and confirmation
+    windows are unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 08:00:00 +0200
+
+evoxd (0.6.14) unstable; urgency=medium
+
+  * Flicker fixed at its cause: the 5-second background check no longer
+    switches all action buttons (including Make template) off and on again.
+    Labels, tooltips, styles and visibility are set only when a value really
+    changes; the style sheet is loaded exactly once.
+  * The tabs 1. VAULT, 2. TEMPLATE, 3. DISPOSABLE are now real buttons in the
+    colours of the HOW TO buttons, switching the page below. Appearance only;
+    functions are unchanged.
+  * New diagnostic switch: start evoxd-gui with EVOXD_GUI_TRACE=1 to log GUI
+    updates per cycle on stderr (off by default).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 06:00:00 +0200
+
+evoxd (0.6.13) unstable; urgency=medium
+
+  * Lists (DISPOSABLE, TEMPLATE, VAULT) are rebuilt only when their content
+    really changed; the 5-second refresh no longer causes flicker, and your
+    selection stays untouched. Button states are set only on real change.
+  * The tabs 1. VAULT, 2. TEMPLATE, 3. DISPOSABLE are now coloured buttons in
+    the style of the HOW TO buttons (active: full colour and underline,
+    inactive: pale variant). Appearance only; functions are unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 04:00:00 +0200
+
+evoxd (0.6.12) unstable; urgency=medium
+
+  * VAULT tab: a VAULT VM is pre-selected (first shut-off one, else the
+    first); your own choice is never overwritten. Selection only, nothing
+    is started or copied. With no VAULT VM a clear note asks to create one.
+  * Selection colour in all lists is amber instead of purple, with dark text.
+    Appearance only; functions and locks are unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 03:00:00 +0200
+
+evoxd (0.6.11) unstable; urgency=medium
+
+  * Button colours by function, appearance only. Make template is orange
+    (the colour of HOW TO USE step 2), Verify green, Remove a muted red,
+    Show / Fullscreen a calm blue-grey, Edit list blue-violet. Disabled
+    buttons show a pale version of their own colour instead of grey.
+  * VAULT tab: the note after "Create new VAULT VM in virt-manager" is now
+    a gold bar under the button row with an info symbol and highlighted
+    name patterns. It stays until closed with the small x.
+  * Buttons in the dialogs are coloured too. No change to functions,
+    locking rules, tooltips or confirmation dialogs.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 02:00:00 +0200
+
+evoxd (0.6.10) unstable; urgency=medium
+
+  * HOW TO USE bar: appearance only. Row 4 no longer has its own frame label;
+    the buttons read "4. START: INTERNET" and "4. START: OFFLINE" and share
+    the full row width in equal halves. All step buttons are taller (36 px,
+    30 px on small screens) and equally high.
+  * No change to functions, colours, locking rules, navigation or tooltips.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 01:10:00 +0200
+
+evoxd (0.6.9) unstable; urgency=medium
+
+  * HOW TO USE bar: layout only. Step buttons 1-3 fill the full width of the
+    bar; step 4 sits in the same column, INTERNET and OFFLINE share its row
+    in equal halves; uniform 4 px gap; long text is shortened, never wrapped.
+  * No change to functions, colours, locking rules or tooltips.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 00:40:00 +0200
+
+evoxd (0.6.8) unstable; urgency=medium
+
+  * HOW TO USE bar reworked (GUI only): four steps one below the other, one
+    line each; only step 4 has two buttons (INTERNET / OFFLINE). Every step
+    has its own colour (gold, orange, turquoise, purple/blue).
+  * Guided flow (guidance only, the normal buttons are unchanged): step 2 is
+    dimmed without a VAULT VM, step 4 without a template; the next sensible
+    step gets a soft glowing border; unknown state locks nothing.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 00:00:20 +0200
+
+evoxd (0.6.7) unstable; urgency=medium
+
+  * Start page made self-explanatory (GUI only): tabs now follow the
+    workflow (1. VAULT, 2. TEMPLATE, 3. DISPOSABLE; DISPOSABLE selected at
+    start), new "HOW TO USE" bar with five coloured step buttons that only
+    navigate/highlight (steps 1-3) or open the start dialog (steps 4-5).
+  * The details bar is shown only while a VM is selected; the placeholder
+    text is gone.
+  * Start dialog: the VM number (-01 ...) is shown small and muted behind
+    the large name; the real VM name is unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 00:00:10 +0200
+
+evoxd (0.6.6) unstable; urgency=medium
+
+  * Start dialog polish (GUI only): all Quick purpose groups visible
+    without scrolling (two columns, tighter chips, wider dialog), every
+    group and its chips in one colour (EVERYDAY blue, MONEY amber,
+    WORK & TECH teal, MORE grey, MY LIST rose), slim mode border, VM name
+    in the purple of the DISPOSABLE tab.
+  * The VM name shown in the dialog is the exact name the start will use
+    (recomputed on every change and chip click); if it is taken in the
+    meantime the start is refused with a clear message.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 23:59:59 +0200
+
+evoxd (0.6.5) unstable; urgency=medium
+
+  * Start dialog redesigned (GUI only): Quick purpose chips in coloured
+    groups (EVERYDAY, MONEY, WORK & TECH, MORE, MY LIST), no hint line,
+    VM name shown twice as large and bold, compact window limited to the
+    screen work area (content scrolls, header and buttons stay visible).
+  * "← BACK" replaces "Cancel" in the start and edit dialogs (header bar
+    and bottom row); coloured buttons in "Edit list..."; new purposes are
+    added at the top of the list.
+  * Main window: "Fullscreen" button, F11, Escape leaves fullscreen.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 23:59:30 +0200
+
+evoxd (0.6.4) unstable; urgency=medium
+
+  * Start dialog: "Quick purpose" chips next to the purpose field fill in
+    the purpose (editable, starts nothing, never changes the mode).
+    Default list EMAIL, BROWSING, SHOPPING, SOCIAL, NEWS, BANKING, PAYPAL,
+    CRYPTO, WORK, DOWNLOAD, TESTING, DOCUMENTS, OTHER; "Edit list..."
+    stores a custom list in ~/.config/evoxd/config.json.
+  * A broken config.json is backed up before it is rewritten.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 23:59:00 +0200
+
+evoxd (0.6.3) unstable; urgency=medium
+
+  * No change to the package contents. Version raised because the project
+    gained a development tool outside the package (launcher script).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 23:50:00 +0200
+
+evoxd (0.6.2) unstable; urgency=medium
+
+  * Button colours: "Import template" in template turquoise with dark
+    text, "Start Disposable VM: INTERNET" in the DISPOSABLE tab purple with
+    light text. Offline blue, dialog buttons, red buttons and the gold
+    VAULT button unchanged.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 23:30:00 +0200
+
+evoxd (0.6.1) unstable; urgency=medium
+
+  * VAULT tab: button "Create new VAULT VM in virt-manager..." in vault gold
+    with dark text and a tooltip; function unchanged.
+  * Import template: same free-space line as Make template ("Needed, free,
+    after reserve"), sum over the selected files; import button disabled
+    with the reason in the danger colour when space is short; unknown disk
+    size shows a note and does not block.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Mon, 12 Oct 2026 03:00:00 +0200
+
+evoxd (0.6.0) unstable; urgency=medium
+
+  * VAULT tab: read-only list of VAULT-* VMs (state, RAM, CPUs, disk size,
+    templates made from it). EVOX never starts, changes or deletes a vault.
+  * Make template: protected copy (root 0444) of a shut-off VAULT-* disk as
+    a new TEMPLATE-<name>; warning with confirmation, name suggestion with
+    collision check, space check against /srv/evoxd with reserve, progress
+    with cancel, partial copy always deleted, origin stored in the registry.
+  * Unfinished copies from a crash are offered for deletion at start.
+  * "Create VM in virt-manager..." button; free space line in TEMPLATE tab.
+  * Registry: new tables origins/pending only (0.5.x can still open it).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 22:00:00 +0200
+
+evoxd (0.5.4) unstable; urgency=medium
+
+  * GUI texts only: network lock indicator explains itself (active: muted
+    explanation; inactive: bold danger red "INACTIVE - VMs are blocked
+    completely"), tooltip, ellipsis on narrow windows; tabs DISPOSABLE,
+    TEMPLATE, VAULT (singular).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 21:00:00 +0200
+
+evoxd (0.5.3) unstable; urgency=medium
+
+  * GUI colours and labels only: INTERNET MODE bar and Start button green
+    (#1FA855), OFFLINE blue (#0060b3); Cancel muted red, Stop and erase fixed
+    strong red; tabs DISPOSABLE/TEMPLATE/VAULT in fixed colours with coloured
+    underline on the active tab; centred title with glow; lock indicator with
+    lock symbol.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 20:00:00 +0200
+
+evoxd (0.5.2) unstable; urgency=medium
+
+  * GUI: start dialog has a coloured mode bar at the very top with symbol and
+    text: INTERNET MODE (accent colour) / OFFLINE MODE (fixed blue #0060b3).
+  * Tagline: "Erased on exit."
+  * Tests never start real programs any more (global guard); fixes a real
+    virt-viewer window opening during the test run.
+  * Package: Depends qemu-utils, qemu-system-x86; Recommends virt-manager;
+    Suggests ovmf.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 18:00:00 +0200
+
+evoxd (0.5.1) unstable; urgency=medium
+
+  * GUI: start buttons renamed "Start Disposable VM: INTERNET" and
+    "Start Disposable VM: OFFLINE", stacked, equal width, each with a short
+    second line. OFFLINE uses the fixed theme-independent blue #0060b3 with
+    light text and border; amber is gone.
+  * GUI: "Stop (destroy)" is now "Stop and erase VM": acts only on the selected
+    VM, disabled with a tooltip when nothing is selected, asks for
+    confirmation first.
+  * GUI: wording unified (Mode: Internet / Offline, column Network,
+    "stopped and erased"). No change to lifecycle or registry.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 09:00:00 +0200
+
+evoxd (0.5.0) unstable; urgency=medium
+
+  * GUI: tabs "Disposable" (first), "Templates" and "Vaults" (placeholder).
+    Empty tabs show a short explanation.
+  * GUI: two start buttons instead of the "No network" check box:
+    "Start disposable VM…" (Internet only) and "Start with no network…"
+    (amber). The start dialog shows the mode with one explanation line.
+    Network column: "Internet only" / "Offline".
+  * GUI: collapsible details bar below the disposable VM list (name,
+    template, state, RAM, CPUs, network, start time, overlay file).
+  * GUI: tagline below the title; larger base font (13 pt), minimum
+    window size 980x700, default size 1100x820.
+  * GUI: template list has a "Created" column (import time from the
+    registry); newest copy on top.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sat, 10 Oct 2026 14:00:00 +0200
+
+evoxd (0.4.1) unstable; urgency=medium
+
+  * GUI: template list allows multiple selection; "Remove template…"
+    removes all selected copies after one confirmation (names in bold
+    neon purple, version and size per copy, total size). Copies in use
+    are refused and named in the status line; the others are removed.
+    The "all older versions" option is gone from the GUI (CLI --older stays).
+  * GUI: require Gdk 3.0 explicitly (no PyGIWarning).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Sun, 11 Oct 2026 23:30:00 +0200
+
+evoxd (0.4.0) unstable; urgency=medium
+
+  * Remove template copies: "evoxd template-remove NAME [--version N |
+    --older]" and GUI button "Remove template…" (confirmation with name,
+    version and size; option "all older versions, keep the newest"). Only
+    copies in the pool evoxd-templates with registry entry and expected
+    path; never the original domain, never VAULT-*. Refused while any VM
+    uses the copy as backing file (registry and libvirt). Version numbers
+    are never reused.
+  * Damaged copies: a checksum mismatch marks the copy DAMAGED; no new VMs
+    start from it until it is imported again or removed. Registry schema 2.
+  * GUI setting "Verify template after each VM shutdown" (default off,
+    stored in ~/.config/evoxd/config.json): background check after stop,
+    destroy or guest shutdown; result in the status line, red on mismatch.
+  * GUI: templates named *-BACKUP shown in red (selection, list, import
+    dialog); import dialog starts without a preselected row; template area
+    larger and growing with the window; window size remembered; signal
+    colours readable on light and dark themes; uniform spacing; own icon.
+  * "evoxd template-verify NAME --version N"; template-list shows size and
+    DAMAGED.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 23:59:45 +0200
+
+evoxd (0.3.0) unstable; urgency=medium
+
+  * GUI: template management without a terminal. "Import template…" lists
+    libvirt domains named TEMPLATE-* (read-only; VAULT-* never offered,
+    running ones greyed out with "shut it down first"), asks for
+    confirmation with name and disk size (extra warning for *-BACKUP) and
+    runs the same import function as "evoxd template-import" in a worker
+    thread with a progress bar (phase and elapsed time).
+  * GUI: template list (name, version, firmware, age, running VMs) and
+    "Verify" button (same check as "evoxd template-verify"); the template
+    selection updates after an import without restart.
+  * "evoxd template-import" prints the phases (copy, checksum).
+  * Same capacity wording in main window and start dialog; decimal mark
+    follows the system language everywhere (GUI and CLI).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 23:59:30 +0200
+
+evoxd (0.2.3) unstable; urgency=medium
+
+  * Memory check: uses MemAvailable, VM RAM plus 256 MiB overhead and a
+    configurable host reserve (~/.config/evoxd/config.json, host_reserve_mib,
+    default 2 GiB). Warning only if less than the reserve stays available,
+    start refused below half the reserve. Same check in GUI and CLI.
+  * GUI: start dialog shows host memory, reserve, room for VMs and max. CPUs;
+    RAM and CPU input limited to these maxima.
+  * GUI: "Open console" renamed to "Show selected VM"; errors of the VM
+    window (virt-viewer) are shown in the status line.
+  * GUI and "evoxd list": RAM and CPUs per VM, read from the domain XML.
+  * GUI: all texts in one module, groups Host / VM list / buttons + status
+    line, network lock shown green (active) or red (problem).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 23:59:00 +0200
+
+evoxd (0.2.2) unstable; urgency=medium
+
+  * Fix GUI: background actions (start, stop, reconcile) failed with
+    sqlite3.ProgrammingError because the registry connection was created in
+    the main thread. The registry now opens one connection per thread.
+  * GUI: every error in a background action is shown in the status line;
+    buttons no longer stay disabled after an unexpected error.
+  * Application renamed to "EVOX KVM DISPOSABLE" (window title, desktop
+    entry, package description). Program and package name stay evoxd.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 23:55:00 +0200
+
+evoxd (0.2.1) unstable; urgency=medium
+
+  * Fix start: the ephemeral LUKS passphrase is now 32 random bytes encoded
+    as 64 hex characters (QEMU requires valid UTF-8; raw bytes failed in
+    qemu-img with "is not valid UTF-8").
+  * Live check accepts the built-in q35 iTCO watchdog (model itco only).
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 23:30:00 +0200
+
+evoxd (0.2.0) unstable; urgency=medium
+
+  * Storage moved to /srv/evoxd (pools evoxd-templates, evoxd-overlays).
+  * Naming scheme TEMPLATE-<SYSTEM> / DISPOSABLE-<PURPOSE>-NN.
+  * Ownership is recognised by metadata, not by name.
+  * GUI and messages in English; start dialog with RAM/CPU and capacity check.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 22:00:00 +0200
+
+evoxd (0.1.1) unstable; urgency=medium
+
+  * Wächter: Trennung per Bridge-Port-Sperre statt Link down; STP aus.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 19:00:00 +0200
+
+evoxd (0.1.0) unstable; urgency=medium
+
+  * Version 1: Temp-VMs, Netzsperre N3 mit Wächter.
+
+ -- EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>  Fri, 09 Oct 2026 12:00:00 +0200

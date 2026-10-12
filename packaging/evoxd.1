@@ -1,0 +1,39 @@
+.TH EVOXD 1 "2026-10-10" "evoxd 0.5.0" "User Commands"
+.SH NAME
+evoxd, evoxd-gui \- disposable KVM VMs for e-mail and web browsing
+.SH SYNOPSIS
+.B evoxd
+.RI { setup | template-import | template-list | template-verify | template-remove | start | list | stop | console | reconcile | netcheck } " ..."
+.SH DESCRIPTION
+Starts one-time virtual machines named DISPOSABLE-<PURPOSE>-NN from a protected copy of a
+TEMPLATE-<SYSTEM> domain. Stopping a VM destroys it. Data lives in /srv/evoxd.
+See
+.B evoxd --help
+for details.
+.SH MEMORY
+Before every start (GUI and
+.BR "evoxd start" )
+the free memory is checked with MemAvailable. Each VM needs its RAM plus 256 MiB overhead.
+If less than the host reserve would stay available, a warning is shown; if less than half
+the reserve would stay available, the start is refused.
+.SH TEMPLATES
+.B evoxd template-remove NAME
+.RB [ --version
+.IR N " | " --older ]
+deletes imported copies in the pool evoxd-templates and their registry entries. The original
+TEMPLATE-* domain and VAULT-* are never touched. Refused while any VM (registry or libvirt)
+uses the copy as backing file.
+.PP
+.B evoxd template-verify
+compares the SHA-256 of a copy with the value from the import. A mismatch marks the copy
+DAMAGED; no new VMs start from it until it is imported again or removed. The check detects
+changes of the file after the import (disk errors, tampering on the host). It does not detect
+malware that was already in the template before the import.
+.SH FILES
+.TP
+.I ~/.config/evoxd/config.json
+Optional settings, e.g.
+.B {"host_reserve_mib": 2048}
+(host reserve in MiB, 512\(en65536, default 2048) and
+.B {"verify_after_shutdown": true}
+(GUI: verify the template in the background after each disposable VM ends; default false).

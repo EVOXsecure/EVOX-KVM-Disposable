@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=EVOX KVM DISPOSABLE
+GenericName=Disposable virtual machines
+Comment=Disposable VMs for e-mail and web browsing
+Exec=evoxd-gui
+Icon=evoxd
+StartupWMClass=evoxd-gui
+Terminal=false
+Categories=System;Security;
+Keywords=evox;kvm;disposable;vm;security;e-mail;browser;sandbox;

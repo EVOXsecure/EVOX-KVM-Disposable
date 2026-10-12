@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+if [ "$1" = "configure" ]; then
+    if [ -d /run/systemd/system ]; then
+        systemctl daemon-reload >/dev/null || true
+    fi
+    if command -v deb-systemd-helper >/dev/null; then
+        deb-systemd-helper enable evoxd-netguard.service >/dev/null || true
+    fi
+    if [ -d /run/systemd/system ]; then
+        deb-systemd-invoke restart evoxd-netguard.service >/dev/null || true
+    fi
+fi
+exit 0

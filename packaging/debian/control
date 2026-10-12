@@ -1,0 +1,18 @@
+Package: evoxd
+Version: @VERSION@
+Architecture: all
+Maintainer: EVOXsecure <341397211+EVOXsecure@users.noreply.github.com>
+Installed-Size: @SIZE@
+Depends: python3 (>= 3.10), python3-libvirt, python3-gi, gir1.2-gtk-3.0, libvirt-daemon-system, libvirt-daemon-driver-qemu, nftables, iproute2, virt-viewer, qemu-utils, qemu-system-x86
+Recommends: virt-manager
+Suggests: ovmf
+Section: admin
+Priority: optional
+Homepage: https://evox.invalid/
+Description: EVOX KVM DISPOSABLE - disposable KVM VMs for e-mail and web
+ EVOX KVM DISPOSABLE starts one-time KVM virtual machines from a
+ protected copy of a user-maintained template (TEMPLATE-*). Each VM
+ (DISPOSABLE-<PURPOSE>-NN) gets an encrypted overlay with an ephemeral
+ key; stopping a VM destroys it. Guest traffic is confined by an
+ nftables table, policy routing rules and a libvirt nwfilter, watched by
+ a fail-closed guard service.
